@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+  
+  <style>
+
+    * {
+      --Yellow: hsl(47, 88%, 63%);
+      --White: hsl(0, 0%, 100%);
+      --Grey: hsl(0, 0%, 50%);
+      --Black: hsl(0, 0%, 7%);    
+    }
+
+    body {
+      display: flex;
+      flex: auto;
+      background-color: var(--Yellow);
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-height: 700px;
+      flex-direction: column;
+      overflow: hidden;
+      font-family: Figtree, sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    main {
+      background-color: var(--White);
+      padding: 20px;
+      margin: auto;
+      width: 340px;
+      margin-right: 25px;
+      border: 1px solid var(--Black);
+      border-radius: 15px;
+      box-shadow: 7px 7px var(--Black);    
+      animation: 0.5s ease-in-out border-fade-out;
+    }
+
+    main:hover {
+      box-shadow: 15px 15px var(--Black);    
+      animation: 0.2s ease-in-out border-fade-in;
+    }
+    
+    @keyframes border-fade-in {
+      from {
+        box-shadow: 7px 7px var(--Black);    
+     }
+      to {
+        box-shadow: 15px 15px var(--Black);   
+     }
+    }
+
+    @keyframes border-fade-out {
+      from {
+        box-shadow: 15px 15px var(--Black);   
+      }
+      to {
+        box-shadow: 7px 7px var(--Black);    
+     }
+    }
+
+    .image {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      align-self: center;
+    }
+
+    .label {
+      background-color: var(--Yellow);
+      margin: 12px 12px 12px 0;
+      padding: 5px 10px 5px 10px;
+      border-radius: 5px;
+      font-weight: 800;
+      width: fit-content;
+    }
+
+    h1 {
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    h1:hover {
+      color: var(--Yellow);
+      cursor: pointer;
+    }
+
+    p {
+      color: var(--Grey);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 135%;
+    }
+
+    .author {
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      padding-bottom: 5px;
+    }
+
+    .author img {
+      max-height: 30px;
+      padding: 0px 15px 0px 0px;
+    }
+
+    .attribution {
+      top: 2.5rem;
+      margin: auto;
+      margin-right: 25px;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--Black);
+    }
+
+    @media  only screen and (max-width: 375px) {
+      main {
+        width: 315px;
+        margin-right: 23px;
+      }
+    }
+    
+  </style>
+
+</head>
+<body>
+
+<main>
+  <img  class="image" src="./assets/images/illustration-article.svg" alt="">
+  <div class="label">Learning</div>
+
+  Published 21 Dec 2023
+
+  <h1>HTML & CSS foundations</h1>
+
+  <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+  <div class="author">
+    <img src="./assets/images/image-avatar.webp" alt="Headshot of Greg Hooper">
+    Greg Hooper
+  </div>
+</main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded&nbsp;by&nbsp;<a href="https://github.com/Absynthee">Austin&nbsp;Spillman</a>.
+  </div>
+
+</body>
+</html>
