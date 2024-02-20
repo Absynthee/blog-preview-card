@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS/hub)
+- Solution URL: [Github](https://github.com/Absynthee/blog-preview-card)
 - Live Site URL: [Github Pages](https://absynthee.github.io/blog-preview-card/)
 
 ## My process
@@ -46,5 +46,5 @@ I'd like to keep moving forward and use Frontend Mentor's projects to help build
 ## Author
 
 - Website - [Austin Spillman](https://www.austinspillman.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Absynthee](https://www.frontendmentor.io/profile/Absynthee)
 
